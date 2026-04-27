@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Alunos {
@@ -7,6 +8,8 @@ public class Alunos {
     final float pi = 3.14f;
     public static String[] nomes = new String[numAlunos]; 
     public static int[] idades = new int[numAlunos];
+    ArrayList<Modulos> listaModulos = new ArrayList<Modulos>();
+
 
     public void mostrarInfo() {
         System.out.println("\nTurma 2025/2026");
@@ -23,7 +26,7 @@ public class Alunos {
 
         for (int i = 0; i < nomes.length; i++) {
             // Pedir o nome e idade de cada aluno
-            System.out.println("Qual o teu nome, numero " + (i + 1) + ": ");
+            System.out.println("Qual o teu nome, numero " + (i + 1) + ": "); 
             String nome = nomeX.nextLine();
             nomes[i] = nome;
             System.out.println(nomes[i] + " Qual a tua idade: ");
